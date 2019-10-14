@@ -1,0 +1,830 @@
+{{TAS Taipei/CSS}}
+<html>
+
+<head>
+	<title>TAS Taipei iGEM Wiki</title>
+ <style type='text/css'>
+      #top_title, #sideMenu{
+        display: none;
+      }
+
+      #content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #f3f4f4;}
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#category_navbar">
+	<link rel="shortcut icon" href="http://2016.igem.org/wiki/images/c/c6/T--TAS_Taipei--TAS_iGEM_Logo.png">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="http://2015.igem.org/Template:TAS_Taipei/css/bootstrap?action=raw&ctype=text/css">
+
+
+
+<script>localStorage.clear();</script>
+<script src="http://2015.igem.org/Template:TAS_Taipei/js/jquery?action=raw&ctype=text/javascript"></script>
+<script src='http://2015.igem.org/Template:TAS_Taipei/js/bootstrap?action=raw&ctype=text/javascript'></script>
+<script src="http://2015.igem.org/Template:TAS_Taipei/js/jquerySlides?action=raw&ctype=text/javascript"></script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<style type='text/css'>
+p{font-family: Lato !important;}
+h1{font-size:40-px !important;}
+body{font-family:Lato !important;}
+h3{font-size:25-px
+</style>
+
+<script>
+	$(document).ready(function() {
+		if(document.domain === "2016.igem.org")
+			setTimeout(function() {
+			$("style:eq(0)").remove();
+			}, 500);
+});
+    
+    
+</script>
+
+    
+    <script type="text/javascript" src="http://2015.igem.org/Template:TAS_Taipei/js/jssor?action=raw&ctype=text/javascript"></script>
+		<script type="text/javascript" src="http://2015.igem.org/Template:TAS_Taipei/js/jssorSlider?action=raw&ctype=text/javascript"></script>
+
+		<br>
+		<script>
+			jQuery(document).ready(function ($) {
+				var _CaptionTransitions = [];
+				_CaptionTransitions["L"] = { $Duration: 800, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["R"] = { $Duration: 800, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["T"] = { $Duration: 800, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["B"] = { $Duration: 800, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["TL"] = { $Duration: 800, x: 0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["TR"] = { $Duration: 800, x: -0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["BL"] = { $Duration: 800, x: 0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+				_CaptionTransitions["BR"] = { $Duration: 800, x: -0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+
+				_CaptionTransitions["WAVE|L"] = { $Duration: 1500, x: 0.6, y: 0.3, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseInWave }, $Opacity: 2, $Round: { $Top: 2.5} };
+				_CaptionTransitions["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
+				var options = {
+					$AutoPlay: true,
+                    $AutoPlayInterval: 10000,
+					$SlideDuration: 500,  
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                }
+
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        });
+		</script>
+    
+	<div class="container" style='z-index:10;position:relative;'>
+		<div class="row center-block" style = "text-align: left;">
+	<nav style='font-family:Lato;font-size:22px;background-color:#1C77C3;-webkit-transform: translateZ(0);z-index: 100;position: fixed;box-shadow: 0px 0px 10px black;'>
+		<ul style='margin-left:0px'>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Background"><h4 class="dropdown-toggle disabled" data-toggle="dropdown"><b>PROJECT</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Background">Background</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Achievements">Achievements</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Collaborations">Collaborations</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Parts">Parts</a></h5>
+							</div>
+						</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/1/11/T--TAS_Taipei--TAS_Icon_Project.png">
+						<h4><b>Cataracts</b> - the leading cause of blindness. Find out how we can non-invasively <b>treat</b> and <b>prevent</b> cataract formation.</b></h4>
+					</div>
+					
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>EXPERIMENTAL</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#lensmodel">Lens Cataract Model</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#construct">Prevention and Treatment Constructs </a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#prototype">Delivery Prototype</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Notebook">Notebook</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/b/b0/T--TAS_Taipei--TAS_Icon_Experiments.png">
+                        <h4>We build <b>constructs</b> to make our great ideas become reality. Follow along our discovery of exciting science!</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Model"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>MODEL</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#GSRFunc">GSR Function</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#prototype">Prototype Delivery</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#treatment">CH25H Treatment</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#software">Calculator</a></h5>
+						</div>
+
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/c/ca/T--TAS_Taipei--TAS_Icon_Model.png">
+						<h4><b>Computational Biology</b> provides us models that we cannot easily test experimentally. Click to find out the results of our modeling, and the math behind it!</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>HUMAN PRACTICE</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#research">Research</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#outreach">Outreach</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#impact">Impact</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/b/b9/T--TAS_Taipei--TAS_Icon_HP.png">
+						<h4>We don't just grow cool bacteria. We make a <b>difference</b>. Find out how we tackled <b>social aspects</b> of this project.</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Safety"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>SAFETY</b></h4></a>
+				<div class="dropdown-menu">
+						<div style='height:100px;'>
+							<div class='subcategories_container'>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#overview">Overview</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#biosafety">Biosafety</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#riskreduction">Risk Reduction Methods</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#furtherquestion">Further Questions</a></h5>
+								</div>
+							</div>
+						<img src="http://2016.igem.org/wiki/images/7/7e/T--TAS_Taipei--TAS_Icon_Safety.png">
+						<h4><b>Safety first.</b> Especially in a lab. Here's how we maintained and investigated the integrity and security of our work environment.</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Team"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>TEAM</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Team#members">Members</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Team#about">About</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Attributions">Attributions</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Wiki_Standard_Pages">Wiki Standard Pages</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/c/c6/T--TAS_Taipei--TAS_Icon_Team.png">
+						<h4>Every iGEM project is the accumulation of an entire year's hard work by a group of cheerful students. <b>Meet the team!</b></h4>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</div>
+<br>
+<br>
+<br>
+<div class="row center-block" style = "padding:10px;width:960px;background-color:#07BEB8;box-shadow:0px 0px 5px black">
+		<div class="row" style = "text-align:center;">
+				<div class="col-sm-2">
+					<a href="http://2016.igem.org/Team:TAS_Taipei" style='text-decoration: none'><img src="http://2015.igem.org/wiki/images/2/2f/Tas_igemlogo.png
+" alt="" style="width: 100px;"></a>
+				</div>
+				<div class="col-sm-8" style='text-align:center;'>
+					<a href="http://2016.igem.org/Team:TAS_Taipei" style='text-decoration: none;'>
+						<h2 style="font-family:'Lato';letter-spacing:10px;color: white; font-size: 60px;  margin-top: 0;  margin-bottom: 0;"><b>
+						C&#9678;UNTERACTS</b></h2>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a href="http://igem.org/HS"><img src="http://2016.igem.org/wiki/images/6/6e/T--TAS_Taipei--TAS_Icon_Logo2.png" alt="" style="width: 100px;"></a>
+				</div>
+			</div>
+</div>
+		<br>
+		<div id="slider1_container" style="position: relative; top: 0px; left: 6%; width: 1080px;
+        height: 600px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1080px; height: 600px;
+            overflow: hidden;">
+            <div><div u="image" id="image1ani" style = "lightgrey;text-align:center"><image src="http://2016.igem.org/wiki/images/b/bb/T--TAS_Taipei--TeamPhoto_iGEMPoster.jpg"/></div>
+                <div u="caption" t="B" style="box-shadow: 0 0 10px 0;background-color:orange;padding:20px;position: absolute; bottom: 10px; left: 300px;">
+                    
+                    <p style = "color:white;font-size:25px;text-align:center">
+                        <b>BEST MODEL, PARTS COLLECTION,</b>
+                    </p>
+                    <p style = "color:white;font-size:25px;text-align:center">
+                        <b>EDUCATION & PUBLIC ENGAGEMENT</b>
+                    </p>
+                    <p style = "color:white;font-size: 18px;text-align:center">
+                     Nominated: Best Wiki, Poster, Integrated Human Practices
+                    </p>
+                </div>
+            </div>
+            <div><img u="image" src="http://2016.igem.org/wiki/images/c/cb/T--TAS_Taipei--Counteract_Homepage_Banner.jpg"/></div>
+            <div><div u="image" id="image1ani" style = "lightgrey;text-align:center"><image src="http://2016.igem.org/wiki/images/4/41/T--TAS_Taipei--PurificationAnimation.gif"/></div>
+                <div u="caption" t="L" style="box-shadow: 0 0 10px 0;background-color:orange;padding:20px;position: absolute; top: 250px; left: 20px;">
+                    <p style = "color:white;font-size:32px;">
+                    PROTOTYPE
+                    </p>
+                    <p style = "color:white;font-size: 20px">
+                     Package purified proteins into nanoparticles
+                    </p>
+                </div>
+            </div>
+            <div><div u="image" id="justintime" style = "text-align:center"><image src="http://2016.igem.org/wiki/images/4/4e/T--TAS_Taipei--NPAnimation.gif"  id="image2ani" /></div>
+                <div u="caption" t="L" style="box-shadow: 0 0 10px 0;background-color:orange;padding:20px;position: absolute; top: 35px; left: 30px;">
+                    <p style = "color:white;font-size:32px;">
+                    DELIVERY INTO THE EYE
+                    </p>
+                    <p style = "width:400px;color:white;font-size: 20px">
+                     Nanoparticles allow passage through the cornea
+                    </p>
+                </div>
+            </div>
+            <div><div u="image" style = "text-align:center"><image src="http://2016.igem.org/wiki/images/5/58/T--TAS_Taipei--TeamPhoto.jpg"/></div>
+            <div><div u="image" style = "lightgrey;text-align:center"><image style = "width:1080px" src="http://2016.igem.org/wiki/images/5/58/T--TAS_Taipei--TeamPhoto.jpg"/></div>
+                <div u="caption" t="T" style="box-shadow: 0 0 10px 0;background-color:purple;padding:10px;position: absolute; top: 30px; left: 120px;border-style:solid;border-color:gold;border-width:10px">
+                    <p style = "color:white;font-size:30px;">
+                    <b>TAS Taipei: 2016 iGEM Team</b>
+                    </p>
+                    <p style = "color:white;font-size:30px;">
+                    
+                    </p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 12 css */
+            /*
+            .jssorb12 div           (normal)
+            .jssorb12 div:hover     (normal mouseover)
+            .jssorb12 .av           (active)
+            .jssorb12 .av:hover     (active mouseover)
+            .jssorb12 .dn           (mousedown)
+            */
+            .jssorb12 {
+                position: absolute;
+            }
+            .jssorb12 div, .jssorb12 div:hover, .jssorb12 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url(http://2015.igem.org/wiki/images/9/90/B12.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb12 div { background-position: -7px -7px; }
+            .jssorb12 div:hover, .jssorb12 .av:hover { background-position: -37px -7px; }
+            .jssorb12 .av { background-position: -67px -7px; }
+            .jssorb12 .dn, .jssorb12 .dn:hover { background-position: -97px -7px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb12" style="bottom: 16px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Image Slider</a>
+    </div>
+<br>
+<br>
+
+<div class = "card" id = "bodycontainer" style = "overflow:hidden;font-family:Lato; text-align:left;">
+	<div class = "col-sm-12">
+		<h1 style = "padding:10px;background-color: rgb(33,150,243);color:white">
+			ABSTRACT
+		</h1>
+		<div style = "font-size:20px; line-height:40px">
+            <div class = "col-sm-1"></div>
+            <div class = "col-sm-10"><br>
+			Cataracts, the clouding of the lens, cause half of the world's blindness. Most cataracts are age-related and arise when <b>crystallin proteins in the lens become oxidized and aggregate over time</b>. Surgery is currently the only recognized treatment to effectively cure cataracts, but this method is expensive and invasive. Therefore, we formulated a <b>natural and non-invasive alternative</b>. In the eye, a natural antioxidant glutathione (GSH)—produced by the enzyme glutathione reductase (GSR)—exists to <b>combat oxidation</b>, but GSH levels decrease with age. Studies have also suggested that another enzyme—<b>25-hydroxylase (CH25H)</b>—can convert cholesterol in the eye into 25-hydroxycholesterol (25HC), which <b>reverses crystallin aggregation</b>. We expressed and purified GSR and CH25H for the prevention and treatment of cataracts, respectively. To deliver these proteins through the cornea and into the lens, we engineered <b>biodegradable chitosan nanoparticles</b>, thus creating a natural and non-invasive alternative to surgery.
+			</div>
+            <br>
+			
+		</div>
+	</div>
+
+</div>
+	</div>
+	<br>
+<br><br>
+
+<canvas id="canvas-container" style = "z-index:-1"></canvas>
+<script type="text/javascript" src='http://2016.igem.org/Template:TAS_Taipei/js/field?action=raw&ctype=text/javascript'></script>
+
+</body>
+
+
+
+
+
+
+
+
+<style type='text/css'>
+     #bg { position: fixed; top: 0; left: 0; }
+     .bgwidth { width: 100%; }
+     .bgheight { height: 100%; }
+</style>
+
+<div class="backgroundpic">
+<img src="http://2016.igem.org/wiki/images/e/e5/T--TAS_Taipei--Taipei_Background_1.0.jpg" style="z-index:0" width="100%" important! height="100%" id="bg" alt="" >
+</div>
+
+<script>
+var nowRadius = 0
+$(function() {
+     if (screen.width < 1400)
+       document.body.style.zoom="80%"; // zoom in or out feature
+    else if (screen.width < 1500)
+       document.body.style.zoom = "90%";
+    else document.body.style.zoom="100%";
+    $({blurRadius: 0}).animate({blurRadius: 10}, {
+        duration: 20000,
+        easing:'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+            if ($("#bluebutton").hasClass("isOn") ) {return;};
+            if($('#redbutton').hasClass("isOn") ) {return;}
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+            nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+         if (NineLOCSnum > 20) switchMessage("YELLOW","<b> Oh no! </b> Cataracts are forming! Click on the Eyedrop Tab and get <b>TREATMENT</b> eyedrops!", currentColor()=="GREEN");
+         if (NineLOCSnum == 55) $("#slideoutco").fadeOut(1000);
+         if (NineLOCSnum > 60) switchMessage("RED","Your cataracts are very severe. You need to get TREATMENT fast by clicking the Eyedrop Tab", currentColor()=="YELLOW");
+         if (LOCSnum > 6) {LOCSnum = "6+"; $('#LOCS').text(LOCSnum+"");}
+         else $('#LOCS').text(LOCSnum+""); 
+         
+         //if (LOCSnum ==0) document.getElementById('bluebutton').click();
+        }
+    });
+
+});
+
+startBlur= function(speed) {
+     $({blurRadius: nowRadius}).animate({blurRadius: 10}, {
+        duration: speed,
+        easing: 'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+            if ($("#bluebutton").hasClass("isOn") ) {return;};
+            if($('#redbutton').hasClass("isOn") ) {return;}
+
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+
+         nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+         if (NineLOCSnum == 15) $("#slideoutco").fadeOut(400);
+         if (NineLOCSnum > 20) switchMessage("RED","<b>Cataracts</b> are creaping back again! Click the PREVENTION eyedrop to add GSR into your eyes!", currentColor()=="BLUE");
+         if (LOCSnum > 6) {LOCSnum = "6+"; $('#LOCS').text(LOCSnum+"");}
+         else $('#LOCS').text(LOCSnum+" "); 
+         
+         
+        }
+    });
+};
+
+stopBlur= function(speed) {
+
+     $({blurRadius: nowRadius}).animate({blurRadius: 0}, {
+        duration: speed,
+        easing: 'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+         if ($("#redbutton").hasClass("isOn") ) {} else{return;};
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+         nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+          
+         if (NineLOCSnum < 68){ if (NineLOCSnum > 10) if(currentColor()=="RED" ||  currentColor() == "BLUE") $("#slideoutco").fadeOut(0); switchMessage("YELLOW","<b> Treating</b> your cataract with <b>25HC Eyedrops </b>", currentColor()=="RED");
+                              }
+         if (NineLOCSnum == 9) $("#slideoutco").fadeOut(0);
+        
+            
+        if (NineLOCSnum < 5) {
+            if ($("#bluebutton").hasClass("isOn")){
+                    
+                switchMessage("GREEN","<b>Your eyes are <i>pernamently</i> crystal clear!</b> Treatment is not needed, so don't forget to turn it off!. Click the question mark to learn more.", currentColor()=="BLUE")
+            }
+            else switchMessage("BLUE","Your eyes are crystal clear! To avoid waste, please turn off the <b>TREATMENT</b> eyedrop.", currentColor()=="YELLOW");
+        }
+         if (LOCSnum > 6) LOCSnum = "6+";
+         else LOCSnum = LOCSnum +" ";
+         $('#LOCS').text(LOCSnum+"");     
+         
+        }
+    });
+    
+    
+};
+
+function chooseBlur() {
+   if ($("#redbutton").hasClass("isOn") ) 
+       {
+       stopBlur(4500);
+   
+            }
+   
+     else {
+             if($("#bluebutton").hasClass("isOn") ) {}
+             else {startBlur(12000);}
+           }
+    if (!$("#redbutton").hasClass("isOn"))
+        if ($("#bluebutton").hasClass("isOn"))
+            {
+                $("#slideoutco").fadeOut(0);
+                switchMessage("BLUE","Great! Furthur cataract formation is prevented with GSR Eyedrops. Now use <b>TREATMENT</b> eyedrops one last time.", currentColor()=="RED")
+            }
+};
+
+
+</script>
+
+<script>
+
+function switchToggleB() {
+    if ( $("#bluebutton").hasClass("isOn") ) {
+         $("#bluebutton").removeClass("isOn"); }
+   else { $("#bluebutton").addClass("isOn"); }
+};
+function switchToggleR() {
+    if ( $("#redbutton").hasClass("isOn") ) {
+         $("#redbutton").removeClass("isOn"); }
+   else { $("#redbutton").addClass("isOn"); }
+};
+    
+function currentColor() {
+    if ($("#slidecontenttext").hasClass("alert-danger"))
+        return "RED";
+    if ($("#slidecontenttext").hasClass("alert-warning"))
+        return "YELLOW";
+    if ($("#slidecontenttext").hasClass("alert-info"))
+        return "BLUE";
+    if ($("#slidecontenttext").hasClass("alert-success"))
+        return "GREEN";
+    else return "NONE"
+};
+function switchMessage(color, textInside, refresh) {
+    var entirebox = document.getElementById("slideoutco");
+
+    if (refresh) 
+    {$(entirebox).fadeOut(100);
+    if ($("#slidecontenttext").hasClass("alert-danger"))
+        $("#slidecontenttext").removeClass("alert-danger");
+    if ($("#slidecontenttext").hasClass("alert-warning"))
+        $("#slidecontenttext").removeClass("alert-warning");
+    if ($("#slidecontenttext").hasClass("alert-info"))
+        $("#slidecontenttext").removeClass("alert-info");
+    if ($("#slidecontenttext").hasClass("alert-success"))
+        $("#slidecontenttext").removeClass("alert-success");
+    if (color == "RED")
+        $("#slidecontenttext").addClass("alert-danger");
+    if (color == "YELLOW")
+        $("#slidecontenttext").addClass("alert-warning");
+    if (color == "BLUE")
+        $("#slidecontenttext").addClass("alert-info");
+    if (color == "GREEN")
+        $("#slidecontenttext").addClass("alert-success");
+    
+    
+    $("#slidecontenttext").html(textInside);
+     $(entirebox).fadeIn(500);
+    }
+    
+};
+
+
+</script>
+
+
+
+
+
+
+<canvas id="canvas-container" style = "z-index:-1" hidden></canvas>
+<script type="text/javascript" src='http://2015.igem.org/Template:TAS_Taipei/js/field?action=raw&ctype=text/javascript' hidden></script/>
+
+
+
+<script type="text/javascript">
+/* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
+
+<script type="text/javascript">
+$("#category_navbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash0
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+
+
+</script>
+
+<div id="slideout">
+    <div id="slidecontent">
+        <h3>Prevention</h3> 
+        <h5>GSR Eyedrop</h5> 
+        <label class="switch">
+             <input id="bluebutton" onClick="switchToggleB(); chooseBlur()" type="checkbox">
+             <div class="slider round bluecolorbutton"></div>
+        </label>
+<br>
+
+        <h3>Treatment</h3> 
+        <h5>25HC Eyedrop</h5> 
+        <label class="switch">
+             <input id="redbutton" onClick="switchToggleR(); chooseBlur()" type="checkbox">
+             <div class="slider round redcolorbutton"></div>
+        </label>
+        <h4><b> LOCS: <span id="LOCS">0 &#160;</span></b> &#160; &#160; <a href="http://2016.igem.org/Team:TAS_Taipei/Wiki_Standard_Pages"><button  type="button" class="btn btn-danger btn-md">?</button> </a>
+
+    </div>
+    <div id="clickme">
+    <h2 class="vertical-text" style="Lato" !important>
+             <br> Eyedrops 
+    </h2>
+        <br><br><br>
+        
+    </div>
+</div>
+
+<div id="slideoutco" style="display:none">
+    <div id="slidecontentco">
+        <div id="slidecontenttext" class="alert alert-success fade in">
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+    </div>
+</div>
+
+<javascript>
+    
+</javascript>
+
+<style type='text/css'>
+
+#slideout {
+    background: #FFD700;
+    position: fixed;
+    height: 300px;
+    width: 200px;
+    top: 30%;
+    right:-150px;
+    padding-left: 60px;
+    z-index:30;
+    border-radius: 25px;
+
+
+}
+    
+#slideoutco {
+    position: fixed;
+    height: 200px;
+    width: 300px;
+    top: 70%;
+    right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    z-index:30;
+}
+    
+#clickme {
+    position: absolute;
+    top: 0; left: 0;
+    height: 300px;
+    width: 50px;
+    background: #FFBA49;
+    z-index:30;
+    border-radius: 25px 5px 5px 25px;
+}
+
+#slidecontent {
+    float:left;
+}
+    
+#slidecontentco {
+    float:left;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+  float: left;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider.bluecolorbutton {
+  background-color: #2196F3;
+}
+
+input:focus + .slider.bluecolorbutton {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider.redcolorbutton {
+  background-color: #FF0000;
+}
+
+input:focus + .slider.redcolorbutton {
+  box-shadow: 0 0 1px #FF0000;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+<script>
+$(function () {
+    var rightVal = -150;
+    
+        $("#clickme").click(function () {
+        
+        rightVal = (rightVal * -1) - 150;
+        $(this).parent().animate({right: rightVal + 'px'}, {queue: false, duration: 500});
+    });
+    
+});
+
+
+</script>
+
+
+</body>
+
+</html>
