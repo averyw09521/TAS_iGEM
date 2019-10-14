@@ -1,0 +1,882 @@
+{{TAS Taipei/CSS}}
+<html>
+
+<head>
+	<title>Background - TAS Taipei iGEM Wiki</title>
+ <style type='text/css'>
+      #top_title, #sideMenu{
+        display: none;
+      }
+
+      #content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #f3f4f4;}
+
+      
+
+
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#category_navbar">
+	<link rel="shortcut icon" href="http://2016.igem.org/wiki/images/c/c6/T--TAS_Taipei--TAS_iGEM_Logo.png">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="http://2015.igem.org/Template:TAS_Taipei/css/bootstrap?action=raw&ctype=text/css">
+
+
+
+<script>localStorage.clear();</script>
+<script src="http://2015.igem.org/Template:TAS_Taipei/js/jquery?action=raw&ctype=text/javascript"></script>
+<script src='http://2015.igem.org/Template:TAS_Taipei/js/bootstrap?action=raw&ctype=text/javascript'></script>
+<script src="http://2015.igem.org/Template:TAS_Taipei/js/jquerySlides?action=raw&ctype=text/javascript"></script>
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+
+<style type='text/css'>
+p{font-family: Lato !important; font-size:17px !important}
+h1{font-size:40-px !important;}
+body{font-family:Lato !important;}
+h3{font-size:25-px
+</style>
+
+<script>
+	$(document).ready(function() {
+		if(document.domain === "2016.igem.org")
+			setTimeout(function() {
+			$("style:eq(0)").remove();
+			}, 500);
+});
+    
+    
+</script>
+    
+
+    
+	<div class="container" style='z-index:10;position:relative;'>
+		<div class="row center-block" style = "text-align: left;">
+	<nav style='font-family:Lato;font-size:22px;background-color:#1C77C3;-webkit-transform: translateZ(0);z-index: 100;position: fixed;box-shadow: 0px 0px 10px black;'>
+		<ul style='margin-left:0px'>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Background"><h4 class="dropdown-toggle disabled" data-toggle="dropdown"><b>PROJECT</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Background">Background</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Achievements">Achievements</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Collaborations">Collaborations</a></h5>
+							</div>
+							<div>
+								<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Parts">Parts</a></h5>
+							</div>
+						</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/1/11/T--TAS_Taipei--TAS_Icon_Project.png">
+						<h4><b>Cataracts</b> - the leading cause of blindness. Find out how we can non-invasively <b>treat</b> and <b>prevent</b> cataract formation.</b></h4>
+					</div>
+					
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>EXPERIMENTAL</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#lensmodel">Lens Cataract Model</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#construct">Prevention and Treatment Constructs </a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Experimental_Summary#prototype">Delivery Prototype</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Notebook">Notebook</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/b/b0/T--TAS_Taipei--TAS_Icon_Experiments.png">
+                        <h4>We build <b>constructs</b> to make our great ideas become reality. Follow along our discovery of exciting science!</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Model"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>MODEL</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#GSRFunc">GSR Function</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#prototype">Prototype Delivery</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#treatment">CH25H Treatment</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Model#software">Calculator</a></h5>
+						</div>
+
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/c/ca/T--TAS_Taipei--TAS_Icon_Model.png">
+						<h4><b>Computational Biology</b> provides us models that we cannot easily test experimentally. Click to find out the results of our modeling, and the math behind it!</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>HUMAN PRACTICE</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#research">Research</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#outreach">Outreach</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Human_Practices#impact">Impact</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/b/b9/T--TAS_Taipei--TAS_Icon_HP.png">
+						<h4>We don't just grow cool bacteria. We make a <b>difference</b>. Find out how we tackled <b>social aspects</b> of this project.</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Safety"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>SAFETY</b></h4></a>
+				<div class="dropdown-menu">
+						<div style='height:100px;'>
+							<div class='subcategories_container'>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#overview">Overview</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#biosafety">Biosafety</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#riskreduction">Risk Reduction Methods</a></h5>
+								</div>
+								<div>
+									<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Safety#furtherquestion">Further Questions</a></h5>
+								</div>
+							</div>
+						<img src="http://2016.igem.org/wiki/images/7/7e/T--TAS_Taipei--TAS_Icon_Safety.png">
+						<h4><b>Safety first.</b> Especially in a lab. Here's how we maintained and investigated the integrity and security of our work environment.</h4>
+					</div>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="http://2016.igem.org/Team:TAS_Taipei/Team"><h4 class='dropdown-toggle disabled' data-toggle="dropdown"><b>TEAM</b></h4></a>
+				<div class="dropdown-menu">
+					<div class='subcategories_container'>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Team#members">Members</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Team#about">About</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Attributions">Attributions</a></h5>
+						</div>
+						<div>
+							<h5><a href="http://2016.igem.org/Team:TAS_Taipei/Wiki_Standard_Pages">Wiki Standard Pages</a></h5>
+						</div>
+					</div>
+					<div style='height:140px;'>
+						<img src="http://2016.igem.org/wiki/images/c/c6/T--TAS_Taipei--TAS_Icon_Team.png">
+						<h4>Every iGEM project is the accumulation of an entire year's hard work by a group of cheerful students. <b>Meet the team!</b></h4>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</div>
+<br>
+<br>
+<br>
+<div class="row center-block" style = "padding:10px;width:90%;background-color:#07BEB8;box-shadow:0px 0px 5px black">
+		<div class="row" style = "text-align:center;">
+				<div class="col-sm-2">
+					<a href="http://2016.igem.org/Team:TAS_Taipei" style='text-decoration: none'><img src="http://2016.igem.org/wiki/images/c/c6/T--TAS_Taipei--TAS_iGEM_Logo.png
+" alt="" style="width: 100px;"></a>
+				</div>
+				<div class="col-sm-8" style='text-align:center;'>
+					<a href="http://2016.igem.org/Team:TAS_Taipei" style='text-decoration: none;'>
+						<h2 style="font-family:'Lato';letter-spacing:10px;color: white; font-size: 60px;  margin-top: 0;  margin-bottom: 0;"><b>
+						C&#9678;UNTERACTS</b></h2>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a href="http://igem.org/HS"><img src="http://2016.igem.org/wiki/images/6/6e/T--TAS_Taipei--TAS_Icon_Logo2.png" alt="" style="width: 100px;"></a>
+				</div>
+			</div>
+</div>
+		<br>
+		<div class="row card" id='bodycontainer' class='row'>
+			<div class="col-sm-2" style='padding-left:5% padding-right:10%'>
+				<div id="category_navbar">
+					<ul class="nav nav-list" data-spy="affix" data-offset-top="160" style='-webkit-transform: translateZ(0);width:160px;margin-left:0' >
+                        
+                        <li><a href="#cataract">What are Cataracts?</a></li>
+						<li><a href="#solution">What is our Solution?</a></li>
+                        
+
+					</ul>
+				</div>
+
+			</div>
+
+
+			<div class="col-sm-10" style="padding-right:5%">
+				<div class="row">
+					<div class="col-sm-12">
+                        <body>
+						<h1 id='overview'>Background</h1>
+                                                    	
+                        <p>Cataracts are the leading cause of blindness today, affecting 20 million people worldwide (World Health Organization). Half of Americans above 80 years old are affected by cataracts (National Eye Institute), and so are many animals! The National Eye Institute projects that in 30 years, the number of cataract patients will increase to 50 million (National Eye Institute).  </p>                            
+				    </div>
+                </div>
+
+
+
+                    <div class = "row">
+		              <div class="col-sm-12">
+				        <h2 id = 'cataract'>What are Cataracts?</h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <p>
+                                    The lens is mostly made of proteins called crystallins. Crystallin proteins are normally soluble, which keeps the lens clear and allows light entering the eye to focus. When these proteins are damaged, they form insoluble clumps (Truscott, 2005). This causes the clouding seen in cataractous lenses, which scatters light and in turn makes vision blurry (Figure 1.1).
+
+                                </p>
+                                </div>
+                                <figure class = "col-sm-6">
+							         <img src="http://2016.igem.org/wiki/images/f/ff/T--TAS_Taipei--Normal_vs_Cataract_Model_cropped.png">
+                                    <figcaption class='darkblue'><b>Figure 1.1. </b>Cataracts scatter light coming through the lens, which blurs vision.
+</figcaption>
+						      </figure>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <p>
+                                    Cataracts can be caused by many factors, including radiation and diabetes, but the underlying cause is oxidative damage. Oxidative damage happens when unstable chemicals containing oxygen react with DNA, lipids, or proteins, disrupting cellular functions (Truscott, 2005). In the lens, crystallin proteins can be oxidized by hydrogen peroxide (H₂O₂), which is a reactive molecule produced during aerobic respiration (Giorgio et al., 2007). H₂O₂ reacts with protein residues and changes the shape of the protein. When two cysteine residues on separate proteins are oxidized by H₂O₂, for example, they can form a disulfide bond, which links these proteins together. The damaged proteins thus aggregate and form clumps in the lens (Truscott, 2005) (Figure 1.2). 
+ 
+ 
+                                </p>
+                                </div>
+                                <figure class = "col-sm-6">
+							         <img src="http://2016.igem.org/wiki/images/9/92/T--TAS_Taipei--Oxidative_Damage.jpeg">
+                                    <figcaption class='darkblue'><b>Figure 1.2. </b>Oxidative damage by H₂O₂ can lead to proteins misfolding, breaking apart, and clumping.</figcaption>
+                                </figure>
+                                
+                                
+                            </div>
+                        
+                          
+                            <br><br>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                <p>
+                                    <b>In the eye, a natural antioxidant called glutathione (GSH) exists,</b> which can convert H₂O₂ into water (Giblin, 2000). With age, however, GSH levels decrease, and oxidative damage caused by H₂O₂ increases. When there is more H₂O₂ in the lens than GSH can remove, crystallins become damaged (Figure 1.3). When GSH levels are low, H₂O₂ starts to oxidize crystallins and cause cataracts. As lens cells age, they move towards the nucleus and their GSH levels fall (Cvekl & Ashery-Padan, 2014), which may explain why the older cells in the lens nucleus are more prone to developing cataracts 
+
+
+
+
+                                </p>
+                                </div>
+                            </div>
+                          <br><br>
+                            <div class="row">
+                                <figure class = "col-sm-7">
+							         <img src="http://2016.igem.org/wiki/images/5/5d/T--TAS_Taipei--Antioxidant_Balance.jpeg">
+                                    <figcaption class='darkblue'><b>Figure 1.3.</b> Antioxidants protects proteins from oxidative damage by H₂O₂ (left). When antioxidant levels are low, H₂O₂ damages crystallins and cataract develops (right).  </figcaption>
+						      </figure>
+                                <div class="col-sm-1"></div>
+                                <figure class = "col-sm-4">
+							         <img src="http://2016.igem.org/wiki/images/6/6c/T--TAS_Taipei--New_vs_Old_Cells.jpeg">
+                                    <figcaption class='darkblue'><b>Figure 1.4.</b> Lens cells move towards the nucleus as they mature. Older cells have less GSH and are more susceptible to oxidative damage by H₂O₂. </figcaption>
+						      </figure>
+                            </div>
+                          <br><br>
+                          <div class="row">
+                                <div class="col-sm-7">
+                                <p>
+                                    The current standard treatment for cataracts is surgery, which replaces the cloudy lens with a clear artificial lens. Surgery is effective, but like all surgeries, it is <b>invasive and requires professional equipment and trained surgeons.</b> These requirements add to the cost, which averages about $3,500 per eye in the US without insurance (Sigre, 2016), and is the biggest obstacle to solving cataracts worldwide. Through literature research, we found a molecule called 25-hydroxycholesterol (25HC) that can reverse protein aggregation. We hope to use this as an alternative to surgery to treat cataracts. 
+
+                                </p>
+                                </div>
+                              <figure class = "col-sm-5">
+							         <img src="http://2016.igem.org/wiki/images/e/e2/T--TAS_Taipei--Surgery_Cataract.jpeg">
+                                    <figcaption class='darkblue' style="font-color:red"><b>Figure 1.5.</b> Our goal is to replace surgery with noninvasive eye drops that prevent and treat cataracts.</figcaption>
+						      </figure>
+                            </div>
+
+                        </div> <!-- Container -->
+                    </div> <!-- Container -->
+                    
+                    
+                    
+                   <div class = "row">
+		              <div class="col-sm-12">
+				        <h2 id = 'solution'>What is our Solution?</h2>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                <p>
+                                    Our goal is to develop noninvasive, easy-to-use, and affordable eyedrops to prevent and treat cataracts (Figure 1.5). 
+                                </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-sm-12">
+                                <h3 id="prevention">Prevention</h3>
+                                <p>
+                                    When GSH is present, H₂O₂ can oxidize GSH instead of crystallin proteins. When GSH becomes oxidized, a disulfide bond forms between two GSH molecules, which become oxidized glutathione (GSSG). Through literature research, we found an enzyme that recycles GSSG back into GSH. This enzyme is called glutathione reductase (GSR) (Ganea & Harding, 2006). As seen in Figure 1.6, GSR (green) recycles GSSG back into GSH, so that crystallin proteins remain protected. Even though GSR exists in the lens, its levels decrease with age, which leads to the development of cataracts (Michael & Bron, 2011). <b>Our goal is to independently produce and deliver GSR to the lens, so that cataract formation is prevented. </b>
+
+                                </p>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                
+                                
+                                
+                                    <div class="col-sm-4"><img src="http://2016.igem.org/wiki/images/b/b0/T--TAS_Taipei--ClearAnimation1.gif"></div>
+                                    
+                                    <div class="col-sm-4"><img src="http://2016.igem.org/wiki/images/3/30/T--TAS_Taipei--BlurredAnimation1.gif"></div>
+                                    
+                                    <div class="col-sm-4"><img src="http://2016.igem.org/wiki/images/7/7f/T--TAS_Taipei--AnimatinoLegend.gif"></div>
+                                    
+							     <figure class = "col-sm-12">   
+                                    <figcaption class='darkblue'><b>Figure 1.6 </b>In a normal lens (left), GSR (enzyme, in green) converts GSSG into GSH. H₂O₂ oxidizes GSH instead of crystallin proteins, so that crystallin proteins remain protected, and the lens remains clear. In a cataractous lens (right), GSR levels are low so GSH cannot be remade. Since GSH is not present to protect proteins against H₂O₂, cataracts begin to develop. </figcaption>
+                                </figure>
+                                
+                                
+                                
+                            </div>
+                          <br><br>
+                          
+                          <div class="row">
+                                
+                                <div class="col-sm-8">
+                                <h3 id="treatment">Treatment</h3>
+                                <p>
+                                    We also found a molecule that can restore solubility of protein clumps and lens transparency. It is called 25-hydroxycholesterol (25HC) (Makley et al., 2015). 25HC can be produced from cholesterol by the enzyme cholesterol 25-hydroxylase (CH25H) (Figure 1.7). Our goal is to independently produce and deliver CH25H to the lens, so that cataracts can be treated. 
+ 
+                                </p>
+                                </div>
+                                <figure class = "col-sm-4">
+							         <img src="http://2016.igem.org/wiki/images/7/7c/T--TAS_Taipei--CH25HRxnDescription.png">
+                                    <figcaption class='darkblue'><b>Figure 1.7. </b>CH25H (enzyme) converts cholesterol to 25HC, which can reverse protein clumps.
+</figcaption>
+                                    </figure>
+                                </div>
+                                
+                            </div>
+                          
+                          
+
+                        </div> <!-- Container -->
+                    <br><br>
+                    <div class = "row">
+					   <div class="col-sm-12">
+						<h3>Citations</h3>
+<p>Cvekl, A., & Ashery-Padan, R. (2014). The cellular and molecular mechanisms of vertebrate lens development. Development, 141(23), 4432-4447.
+</p>
+					        <br>
+<p>Ganea, E. & Harding, J. J. (2006). Glutathione-related enzymes and the eye. Curr Eye Res., 31(1), 1–11
+</p> <br> 
+<p>Giblin, F. J. (2000). Glutathione: a vital lens antioxidant. Journal of Ocular Pharmacology and Therapeutics, 16(2), 121-135.
+</p> <br>
+<p>Giorgio, M., Trinei, M., Migliaccio, E., & Pelicci, P. (2007). Nature Reviews Molecular Cell Biology, 8(9), 722-8. 
+</p> <br>
+<p>Makley, L. N., McMenimen, K. A., DeVree, B. T., Goldman, J. W., McGlasson, B. N., Rajagopal, P., Dunyak, B.M., McQuade, T.J., Thompson, A.D., Sunahara, R., Klevit, R.E., Andley, U.P., and Gestwicki, J.E. (2015). Pharmacological chaperone for α-crystallin partially restores transparency in cataract models. Science, 350(6261), 674-677.
+</p> <br>
+<p>Michael, R., & Bron, A. J. (2011). The ageing lens and cataract: a model of normal and pathological ageing. Philosophical Transactions of the Royal Society of London B: Biological Sciences, 366(1568), 1278-1292.
+</p> <br>
+<p>National Eye Institute | Cataracts. (n.d.). Retrieved October 04, 2016, from https://nei.nih.gov/eyedata/cataract 
+</p> <br>
+<p>Segre L (2016, Sept. 21). Cataract surgery cost. Retrieved from http://www.allaboutvision.com/conditions/cataract-surgery-cost.htm
+</p> <br>
+<p>Truscott, RJ (2005). Age-related nuclear cataract-oxidation is the key. Exp Eye Res., 80(5): 709-25.
+</p> <br>
+<p>World Health Organization | Priority eye diseases. (n.d.). Retrieved October 03, 2016, from http://www.who.int/blindness/causes/priority/en/index1.html
+</p> <br>
+<p></p> <br> <br>            
+					   </div>
+				    </div>
+
+                    
+
+
+				
+                    
+			</div>
+
+		</div>	
+    </div>
+	
+	<br>
+<br><br>
+
+<canvas id="canvas-container" style = "z-index:-1"></canvas>
+<script type="text/javascript" src='http://2016.igem.org/Template:TAS_Taipei/js/field?action=raw&ctype=text/javascript'></script>
+
+</body>
+
+
+
+
+
+
+
+
+<style type='text/css'>
+     #bg { position: fixed; top: 0; left: 0; }
+     .bgwidth { width: 100%; }
+     .bgheight { height: 100%; }
+</style>
+
+<div class="backgroundpic">
+<img src="http://2016.igem.org/wiki/images/e/e5/T--TAS_Taipei--Taipei_Background_1.0.jpg" style="z-index:0" width="100%" height="100%" id="bg" alt="" >
+</div>
+
+<script>
+var nowRadius = 0
+$(function() {
+    if (screen.width > 1800)
+       $("#slideoutco").fadeOut(0);
+    
+    $({blurRadius: 0}).animate({blurRadius: 10}, {
+        duration: 20000,
+        easing:'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+            if ($("#bluebutton").hasClass("isOn") ) {return;};
+            if($('#redbutton').hasClass("isOn") ) {return;}
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+            nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+         /**if (NineLOCSnum > 20) switchMessage("YELLOW","<b> Oh no! </b> Cataracts are forming! Click on the Eyedrop Tab and get <b>TREATMENT</b> eyedrops!", currentColor()=="GREEN");
+         if (NineLOCSnum == 55) $("#slideoutco").fadeOut(1000);
+         if (NineLOCSnum > 60) switchMessage("RED","Your cataracts are very severe. You need to get TREATMENT fast by clicking the Eyedrop Tab", currentColor()=="YELLOW");*/
+         if (LOCSnum > 6) {LOCSnum = "6+"; $('#LOCS').text(LOCSnum+"");}
+         else $('#LOCS').text(LOCSnum+""); 
+         
+         if (LOCSnum ==0) document.getElementById('bluebutton').click();
+        }
+    });
+
+});
+
+startBlur= function(speed) {
+     $({blurRadius: nowRadius}).animate({blurRadius: 10}, {
+        duration: speed,
+        easing: 'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+            if ($("#bluebutton").hasClass("isOn") ) {return;};
+            if($('#redbutton').hasClass("isOn") ) {return;}
+
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+
+         nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+         /**if (NineLOCSnum == 15) $("#slideoutco").fadeOut(400);
+         if (NineLOCSnum > 20) switchMessage("RED","<b>Cataracts</b> are creeping back again! Click the PREVENTION eyedrop to add GSR into your eyes!", currentColor()=="BLUE");*/
+         if (LOCSnum > 6) {LOCSnum = "6+"; $('#LOCS').text(LOCSnum+"");}
+         else $('#LOCS').text(LOCSnum+" "); 
+         
+         
+        }
+    });
+};
+
+stopBlur= function(speed) {
+
+     $({blurRadius: nowRadius}).animate({blurRadius: 0}, {
+        duration: speed,
+        easing: 'swing', // or "linear"
+                         // use jQuery UI or Easing plugin for more options
+        step: function() {
+            console.log(this.blurRadius);
+         if ($("#redbutton").hasClass("isOn") ) {} else{return;};
+            $('.backgroundpic').css({
+                "-webkit-filter": "blur("+this.blurRadius+"px)",
+                "filter": "blur("+this.blurRadius+"px)"
+
+            });
+         nowRadius = this.blurRadius;
+         var LOCSnum = Math.round(nowRadius*6/9);
+         var NineLOCSnum = Math.round(nowRadius*6/9*10);
+          
+         /**if (NineLOCSnum < 68){ if (NineLOCSnum > 10) if(currentColor()=="RED" ||  currentColor() == "BLUE") $("#slideoutco").fadeOut(0); switchMessage("YELLOW","<b> Treating</b> your cataract with <b>25HC Eyedrops </b>", currentColor()=="RED");
+                              }
+         if (NineLOCSnum == 9) $("#slideoutco").fadeOut(0);
+        
+            
+        if (NineLOCSnum < 5) {
+            if ($("#bluebutton").hasClass("isOn")){
+                    
+                switchMessage("GREEN","<b>Your eyes are <i>pernamently</i> crystal clear!</b> Treatment is not needed, so don't forget to turn it off!. Click the question mark to learn more.", currentColor()=="BLUE")
+            }
+            else switchMessage("BLUE","Your eyes are crystal clear! To avoid waste, please turn off the <b>TREATMENT</b> eyedrop.", currentColor()=="YELLOW");
+        }*/
+         if (LOCSnum > 6) LOCSnum = "6+";
+         else LOCSnum = LOCSnum +" ";
+         $('#LOCS').text(LOCSnum+"");     
+         
+        }
+    });
+    
+    
+};
+
+function chooseBlur() {
+   if ($("#redbutton").hasClass("isOn") ) 
+       {
+       stopBlur(4500);
+   
+            }
+   
+     else {
+             if($("#bluebutton").hasClass("isOn") ) {}
+             else {startBlur(12000);}
+           }
+    /**if (!$("#redbutton").hasClass("isOn"))
+        if ($("#bluebutton").hasClass("isOn"))
+            {
+                $("#slideoutco").fadeOut(0);
+                switchMessage("BLUE","Great! Furthur cataract formation is prevented with GSR Eyedrops. Now use <b>TREATMENT</b> eyedrops one last time.", currentColor()=="RED")
+            }*/
+};
+
+
+</script>
+
+<script>
+
+function switchToggleB() {
+    if ( $("#bluebutton").hasClass("isOn") ) {
+         $("#bluebutton").removeClass("isOn"); }
+   else { $("#bluebutton").addClass("isOn"); }
+};
+function switchToggleR() {
+    if ( $("#redbutton").hasClass("isOn") ) {
+         $("#redbutton").removeClass("isOn"); }
+   else { $("#redbutton").addClass("isOn"); }
+};
+    
+function currentColor() {
+    if ($("#slidecontenttext").hasClass("alert-danger"))
+        return "RED";
+    if ($("#slidecontenttext").hasClass("alert-warning"))
+        return "YELLOW";
+    if ($("#slidecontenttext").hasClass("alert-info"))
+        return "BLUE";
+    if ($("#slidecontenttext").hasClass("alert-success"))
+        return "GREEN";
+    else return "NONE"
+};
+function switchMessage(color, textInside, refresh) {
+    var entirebox = document.getElementById("slideoutco");
+
+    if (refresh) 
+    {$(entirebox).fadeOut(100);
+    if ($("#slidecontenttext").hasClass("alert-danger"))
+        $("#slidecontenttext").removeClass("alert-danger");
+    if ($("#slidecontenttext").hasClass("alert-warning"))
+        $("#slidecontenttext").removeClass("alert-warning");
+    if ($("#slidecontenttext").hasClass("alert-info"))
+        $("#slidecontenttext").removeClass("alert-info");
+    if ($("#slidecontenttext").hasClass("alert-success"))
+        $("#slidecontenttext").removeClass("alert-success");
+    if (color == "RED")
+        $("#slidecontenttext").addClass("alert-danger");
+    if (color == "YELLOW")
+        $("#slidecontenttext").addClass("alert-warning");
+    if (color == "BLUE")
+        $("#slidecontenttext").addClass("alert-info");
+    if (color == "GREEN")
+        $("#slidecontenttext").addClass("alert-success");
+    
+    
+    $("#slidecontenttext").html(textInside);
+     $(entirebox).fadeIn(500);
+    }
+    
+};
+
+
+</script>
+
+
+
+
+
+
+<canvas id="canvas-container" style = "z-index:-1" hidden></canvas>
+<script type="text/javascript" src='http://2015.igem.org/Template:TAS_Taipei/js/field?action=raw&ctype=text/javascript' hidden></script/>
+
+
+
+<script type="text/javascript">
+/* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
+
+<script type="text/javascript">
+$("#category_navbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash0
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+
+
+</script>
+
+<div id="slideout">
+    <div id="slidecontent">
+        <h3>Prevention</h3> 
+        <h5>GSR Eyedrop</h5> 
+        <label class="switch">
+             <input id="bluebutton" onClick="switchToggleB(); chooseBlur()" type="checkbox">
+             <div class="slider round bluecolorbutton"></div>
+        </label>
+<br>
+
+        <h3>Treatment</h3> 
+        <h5>25HC Eyedrop</h5> 
+        <label class="switch">
+             <input id="redbutton" onClick="switchToggleR(); chooseBlur()" type="checkbox">
+             <div class="slider round redcolorbutton"></div>
+        </label>
+        <h4><b> LOCS: <span id="LOCS">0 &#160;</span></b> &#160; &#160; <a href="http://2016.igem.org/Team:TAS_Taipei/Wiki_Standard_Pages#Animation"><button  type="button" class="btn btn-danger btn-md">?</button> </a>
+
+    </div>
+    <div id="clickme">
+    <h2 class="vertical-text" style="Lato" !important>
+             <br> Eyedrops 
+    </h2>
+        <br><br><br>
+        
+    </div>
+</div>
+
+<div id="slideoutco">
+    <div id="slidecontentco">
+        <div id="slidecontenttext" class="alert alert-danger">
+             <p style="font-size:14px !important"> <a href="#" class="close" data-dismiss="alert">&times;</a>
+                 <strong>Zoom out to see animation.</strong> &#160; &#160; &#160; &#160; &#160;<a href="http://2016.igem.org/Team:TAS_Taipei/Wiki_Standard_Pages#Animation"><button   type="button" class="btn btn-danger btn-sm">?</button> </a><span style="font-size:14px"><br>Your screen resolution is too low unless you zoom out </span></p>
+            
+        </div>
+    </div>
+</div>
+
+<javascript>
+    
+</javascript>
+
+<style type='text/css'>
+
+#slideout {
+    background: #FFD700;
+    position: fixed;
+    height: 300px;
+    width: 200px;
+    top: 30%;
+    right:-150px;
+    padding-left: 60px;
+    z-index:30;
+    border-radius: 25px;
+
+
+}
+    
+#slideoutco {
+    position: fixed;
+    height: 200px;
+    width: 300px;
+    top: 78%;
+    right:1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    z-index:30;
+}
+    
+#clickme {
+    position: absolute;
+    top: 0; left: 0;
+    height: 300px;
+    width: 50px;
+    background: #FFBA49;
+    z-index:30;
+    border-radius: 25px 5px 5px 25px;
+}
+
+#slidecontent {
+    float:left;
+}
+    
+#slidecontentco {
+    float:left;
+}
+
+.vertical-text {
+	transform: rotate(90deg);
+	transform-origin: left bottom 0;
+  float: left;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider.bluecolorbutton {
+  background-color: #2196F3;
+}
+
+input:focus + .slider.bluecolorbutton {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider.redcolorbutton {
+  background-color: #FF0000;
+}
+
+input:focus + .slider.redcolorbutton {
+  box-shadow: 0 0 1px #FF0000;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+</style>
+<script>
+$(function () {
+    var rightVal = -150;
+    
+        $("#clickme").click(function () {
+        
+        rightVal = (rightVal * -1) - 150;
+        $(this).parent().animate({right: rightVal + 'px'}, {queue: false, duration: 500});
+    });
+    
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>
